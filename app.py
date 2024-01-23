@@ -53,7 +53,7 @@ class Window(qt.QMainWindow):
             qt.QMessageBox.warning(self, "Invalid model", "Model must be specified")
             return
         
-        target = f'results/{datetime.now().strftime("%d-%m-%Y_%H:%M:%S")}-{uuid.uuid4()}.mp4'
+        target = f'results/{datetime.now().strftime("%d-%m-%Y_%H-%M-%S")}-{uuid.uuid4()}.mp4'
         conf = float(self.confidence / 100)
         
         detection = ObjectDetection(self.source, target, conf, self.model, 1280, 960)
