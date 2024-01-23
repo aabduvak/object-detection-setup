@@ -24,7 +24,7 @@ pip install -r requirements.txt
 ```
 If there is conflict on version of packages
 ```bash
-pip install ultralytics supervision PyQt5 opencv-python-contrib
+pip install ultralytics supervision PyQt5 opencv-contrib-python
 ```
 ## Usage
 Run model with GUI (PyQt5), choose model and source
