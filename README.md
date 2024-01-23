@@ -1,12 +1,59 @@
-Welcome to our Object Detection project powered by YOLOv8, a state-of-the-art real-time object detection algorithm. YOLOv8, or "You Only Look Onece," is renowned for its speed and accuracy, making it a robust choice for identifying and localizing multiple objects simultaneously.
+# YOLOv8 Object Detection Setup 📷
 
-Our project leverages the YOLOv8 algorithm to detect objects in images and videos, providing efficient and precise results. From detecting common objects to more complex scenarios, our implementation is designed to handle a variety of use cases with ease.
+This repository contains code and instructions for setting up an object detection system using [framework/library name, e.g., TensorFlow, PyTorch, YOLO].
 
-Key Features:
+This repository facilitates the implementation of object detection using the YOLOv8 algorithm. Users can effortlessly run their models, and the program will automatically generate output videos in the **results** folder. Sample models are included for quick and easy usage, and the capability to capture frames through a webcam is activated.
 
-    Real-time object detection
-    High accuracy across diverse scenarios
-    Support for various object classes
-    Seamless integration with image and video inputs
+## Overview
 
-Whether you're exploring computer vision, enhancing surveillance systems, or incorporating object detection into your applications, our YOLOv8-based project offers a powerful solution. Join us on the journey of pushing the boundaries of object detection technology.
+The `YOLOv8` Object Detection Setup allows users to perform real-time object detection using the YOLOv8 algorithm. The project is designed for simplicity and convenience, enabling users to run their models seamlessly and obtain output videos with detected objects.
+
+## Prerequisites
+Ensure the following dependencies are installed:
+- Python 3.x
+- YOLOv8 (refer to YOLOv8 documentation for installation instructions)
+- Nvidia CUDA Framework (optional)
+
+## Installation (windows)
+1. Clone the repository and navigate to the project directory:
+```bash
+git clone https://github.com/aabduvak/object-detection-setup.git setup ;
+cd setup
+```
+2. Install required packages
+```bash
+pip install -r requirements.txt
+```
+If there is conflict on version of packages
+```bash
+pip install ultralytics supervision PyQt5 opencv-python-contrib
+```
+## Usage
+Run model with GUI (PyQt5), choose model and source
+```bash
+python main.py
+```
+
+<img src="https://github.com/aabduvak/object-detection-setup/blob/main/assets/example.gif">
+
+Run model in command-line
+```bash
+python stream.py --source=path-to-source --weights=path-to-model --target=output.mp4
+```
+Example
+```bash
+python stream.py --weights=models/person.pt --target=result.mp4 --source=0 #webcam
+```
+
+## Customization
+
+You can easily customize the object detection system by modifying configurations, integrating your own YOLOv8 models, or adjusting other parameters as needed.<br> <br>
+For more info: <br>
+https://docs.ultralytics.com/modes/train/#introduction
+
+## Contributing
+Contributions are welcome! 🙃
+
+## Contact
+
+For support, feedback, or questions, please contact abdulaziz.yosk@gmail.com or open an issue on the GitHub repository.
