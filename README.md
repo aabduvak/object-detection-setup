@@ -2,7 +2,7 @@
 
 This repository contains code and instructions for setting up an object detection system using [framework/library name, e.g., TensorFlow, PyTorch, YOLO].
 
-This repository facilitates the implementation of object detection using the YOLOv8 algorithm. Users can effortlessly run their models, and the program will automatically generate output videos in the **results** folder. Sample models are included for quick and easy usage, and the capability to capture frames through a webcam is activated.
+This repository facilitates the implementation of object detection using the YOLOv8 algorithm. Users can effortlessly run their models, and the program will automatically generate output videos in the **results** folder. Sample models are included for quick and easy usage.
 
 ## Overview
 
